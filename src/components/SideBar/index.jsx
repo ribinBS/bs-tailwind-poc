@@ -30,15 +30,17 @@ const navigation = [
         current: false,
         isBeta: true,
     },
-    { name: 'Calendar', icon: CalendarIcon, href: '#', current: false },
-    { name: 'Documents', icon: InboxIcon, href: '#', current: false },
+    { name: 'Releases', icon: CalendarIcon, href: '#', current: false },
+    { name: 'User Feedback', icon: InboxIcon, href: '#', current: false },
     {
-        name: 'Reports',
+        name: 'Alerts',
         icon: ChartBarIcon,
         href: '#',
         count: 12,
         current: false,
     },
+    { name: 'Discover', icon: CalendarIcon, href: '#', current: false },
+    { name: 'Dashboards', icon: CalendarIcon, href: '#', current: false },
 ];
 
 function classNames(...classes) {
@@ -86,6 +88,49 @@ export default function SideBar() {
                                     )}
                                 </a>
                             ))}
+
+                            <a
+                                key={'activity'}
+                                href={'#'}
+                                className={classNames(
+                                    'text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                                )}>
+                                <CalendarIcon
+                                    className={classNames(
+                                        'text-gray-400 group-hover:text-gray-300 mr-3 flex-shrink-0 h-6 w-6'
+                                    )}
+                                    aria-hidden='true'
+                                />
+                                Activity
+                            </a>
+                            <a
+                                key={'stats'}
+                                href={'#'}
+                                className={classNames(
+                                    'text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                                )}>
+                                <CalendarIcon
+                                    className={classNames(
+                                        'text-gray-400 group-hover:text-gray-300 mr-3 flex-shrink-0 h-6 w-6'
+                                    )}
+                                    aria-hidden='true'
+                                />
+                                Stats
+                            </a>
+                            <a
+                                key={'settnings'}
+                                href={'#'}
+                                className={classNames(
+                                    'text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md'
+                                )}>
+                                <CalendarIcon
+                                    className={classNames(
+                                        'text-gray-400 group-hover:text-gray-300 mr-3 flex-shrink-0 h-6 w-6'
+                                    )}
+                                    aria-hidden='true'
+                                />
+                                Settings
+                            </a>
                         </nav>
                     </div>
                     <div className='flex flex-shrink-0 pb-4'>
