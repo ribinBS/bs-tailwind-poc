@@ -32,8 +32,8 @@ function classNames(...classes) {
 
 export default function Details() {
     return (
-        <main className='flex-1'>
-            <div className='pt-6 mx-auto border-b bg-gray-100'>
+        <main className='flex-1 min-h-screen flex-col'>
+            <div className='pt-6 mx-auto border-b bg-gray-100 w-full'>
                 <div className='px-6'>
                     <div className=''>
                         <nav className='sm:hidden' aria-label='Back'>
@@ -392,6 +392,30 @@ export default function Details() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='flex h-full flex-1 w-full'>
+                <div className='flex min-w-0 flex-1 flex-col overflow-hidden'>
+                    <div className='relative z-0 flex flex-1 overflow-hidden'>
+                        <main className='relative z-0 flex-1 overflow-y-auto focus:outline-none'>
+                            {/* Start main area*/}
+                            <div className='absolute inset-0 py-6 px-4 sm:px-6 lg:px-8'>
+                                <div className='h-full rounded-lg border-2 border-dashed border-gray-200' />
+                            </div>
+                            {/* End main area */}
+                        </main>
+                        <aside className='relative hidden w-96 flex-shrink-0 overflow-y-auto border-l border-gray-200 xl:flex xl:flex-col'>
+                            {/* Start secondary column (hidden on smaller screens) */}
+                            <div className='absolute inset-0 py-6 px-4 sm:px-6 lg:px-8'>
+                                <div className='h-full rounded-lg border-2 border-dashed border-gray-200' />
+                            </div>
+                            {/* End secondary column */}
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div className='p-6 mx-auto border-t bg-gray-100 w-full'>
+                Footer
             </div>
         </main>
     );
