@@ -95,7 +95,7 @@ export default function Details() {
                                     New Issue
                                 </span>
                             </div>
-                            <div className='mt-1 mb-3 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6'>
+                            <div className='align-center mt-1 mb-3 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6'>
                                 <span className='inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800'>
                                     <svg
                                         className='-ml-0.5 mr-1.5 h-2 w-2 text-red-400'
@@ -105,7 +105,7 @@ export default function Details() {
                                     </svg>
                                     Unhandled
                                 </span>
-                                <div className='mt-2 flex items-center text-sm text-gray-500'>
+                                <div className='flex items-center text-sm text-gray-500'>
                                     No remoteDescription
                                 </div>
                             </div>
