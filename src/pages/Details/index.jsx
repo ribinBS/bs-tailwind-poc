@@ -15,6 +15,17 @@ const items = [
     { name: 'Export PDF', href: '#' },
 ];
 
+const tabs = [
+    { name: 'Details', href: '#', current: true },
+    { name: 'Activity', href: '#', count: '0', current: false },
+    { name: 'User Feedback', count: '0', href: '#', current: false },
+    { name: 'Attachments', href: '#', current: false },
+    { name: 'Tags', href: '#', current: false },
+    { name: 'All Events', href: '#', current: false },
+    { name: 'Merged Issues', href: '#', current: false },
+    { name: 'Similar Issues', href: '#', current: false },
+];
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
@@ -22,7 +33,7 @@ function classNames(...classes) {
 export default function Details() {
     return (
         <main className='flex-1'>
-            <div className='py-6 mx-auto border-b bg-gray-100'>
+            <div className='pt-6 mx-auto border-b bg-gray-100'>
                 <div className='px-6'>
                     <div className=''>
                         <nav className='sm:hidden' aria-label='Back'>
@@ -343,6 +354,41 @@ export default function Details() {
                                     </div>
                                 </dd>
                             </div>
+                        </div>
+                    </div>
+                    <div className='hidden sm:block mt-1'>
+                        <div className='border-b border-gray-200'>
+                            <nav
+                                className='-mb-px flex space-x-8'
+                                aria-label='Tabs'>
+                                {tabs.map((tab) => (
+                                    <a
+                                        key={tab.name}
+                                        href='#'
+                                        className={classNames(
+                                            tab.current
+                                                ? 'border-indigo-500 text-indigo-600'
+                                                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200',
+                                            'whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm'
+                                        )}
+                                        aria-current={
+                                            tab.current ? 'page' : undefined
+                                        }>
+                                        {tab.name}
+                                        {tab.count ? (
+                                            <span
+                                                className={classNames(
+                                                    tab.current
+                                                        ? 'bg-indigo-100 text-indigo-600'
+                                                        : 'bg-gray-100 text-gray-900',
+                                                    'hidden ml-3 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block'
+                                                )}>
+                                                {tab.count}
+                                            </span>
+                                        ) : null}
+                                    </a>
+                                ))}
+                            </nav>
                         </div>
                     </div>
                 </div>
