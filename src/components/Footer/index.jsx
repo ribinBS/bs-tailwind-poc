@@ -7,8 +7,8 @@ const navigation = [
 ];
 const navigationRight = [
     { name: 'Terms', href: '#' },
-    { name: 'Terms', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: 'Terms 1', href: '#' },
+    { name: 'Terms 2', href: '#' },
 ];
 
 export default function Footer() {

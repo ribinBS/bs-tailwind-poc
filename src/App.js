@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+// import 'flowbite';
 
 import SideBar from './components/SideBar';
 import Dashboard from './pages/Dashboard';
