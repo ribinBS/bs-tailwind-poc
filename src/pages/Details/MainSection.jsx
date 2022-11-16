@@ -60,7 +60,7 @@ const breadcrumbs = [
 
 export default function MainSection() {
     return (
-        <div className='py-4 px-4 sm:px-6 lg:px-6'>
+        <div className='py-4 px-4 sm:px-6 lg:px-6 mb-9'>
             <div className='md:flex md:items-start md:justify-between flex-start'>
                 <div className='min-w-0 flex-1'>
                     <div className='-ml-2 -mt-2 mb-2 flex flex-wrap items-baseline'>
