@@ -1,7 +1,13 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
-import { ChevronDownIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
+import {
+    ChevronDownIcon,
+    EnvelopeIcon,
+    CakeIcon,
+    BoltIcon,
+    ArchiveBoxIcon,
+} from '@heroicons/react/20/solid';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -10,7 +16,7 @@ function classNames(...classes) {
 export default function AsideSection() {
     return (
         <div className='py-4 px-4 sm:px-6 lg:px-6'>
-            <div>
+            <div className='mb-6'>
                 <Menu
                     as='div'
                     className='relative inline-block text-left w-full'>
@@ -92,6 +98,48 @@ export default function AsideSection() {
                         </Menu.Items>
                     </Transition>
                 </Menu>
+            </div>
+            <div className='mb-6'>
+                <div className='flex mt-2 items-center justify-between'>
+                    <div className='font-medium text-sm flex text-gray-500'>
+                        Owned By{' '}
+                        <CakeIcon className='ml-1 h-4 w-4' aria-hidden='true' />
+                    </div>
+                    <div className='flex'>
+                        <ArchiveBoxIcon
+                            className='ml-1 h-4 w-4'
+                            aria-hidden='true'
+                        />
+                        <BoltIcon className='ml-1 h-4 w-4' aria-hidden='true' />
+                    </div>
+                </div>
+                <div className='flex mt-2 items-center'>
+                    <img
+                        className='inline-block h-6 w-6 rounded-md'
+                        src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                        alt=''
+                    />
+                    <p className='text-xs ml-2'>#live-squad</p>
+                </div>
+            </div>
+            <div className='mb-6'>
+                <div className='font-medium text-sm flex text-gray-500'>
+                    Assigned To
+                </div>
+                <div className='flex mt-2 items-center justify-between'>
+                    <div className='items-center flex'>
+                        <img
+                            className='inline-block h-6 w-6 rounded-md'
+                            src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                            alt=''
+                        />
+                        <p className='text-xs ml-2'>#live-squad</p>
+                    </div>
+                    <ChevronDownIcon
+                        className='ml-1 h-5 w-5'
+                        aria-hidden='true'
+                    />
+                </div>
             </div>
             <div className='mt-4'>
                 <div className='font-medium text-sm flex text-gray-500 mb-2'>
