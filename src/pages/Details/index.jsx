@@ -10,6 +10,7 @@ import {
 } from '@heroicons/react/20/solid';
 import AsideSection from './AsideSection';
 import MainSection from './MainSection';
+import Footer from '../../components/Footer';
 
 const items = [
     { name: 'Save and schedule', href: '#' },
@@ -408,9 +409,7 @@ export default function Details() {
                     </div>
                 </div>
             </div>
-            <div className='p-6 mx-auto border-t bg-gray-100 w-full'>
-                Footer
-            </div>
+            <Footer />
         </main>
     );
 }
