@@ -80,12 +80,14 @@ export default function SideBar() {
                                         )}
                                         aria-hidden='true'
                                     />
-                                    {item.name}
-                                    {item.isBeta && (
-                                        <span className='inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800'>
-                                            Beta
-                                        </span>
-                                    )}
+                                    <div className='flex justify-between w-full'>
+                                        {item.name}
+                                        {item.isBeta && (
+                                            <span className='inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800'>
+                                                Beta
+                                            </span>
+                                        )}
+                                    </div>
                                 </a>
                             ))}
 
