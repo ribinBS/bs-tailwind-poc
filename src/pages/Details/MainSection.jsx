@@ -6,6 +6,8 @@ import {
     CakeIcon,
     ClockIcon,
     ChevronDownIcon,
+    MegaphoneIcon,
+    XMarkIcon,
 } from '@heroicons/react/20/solid';
 import { Menu, Transition } from '@headlessui/react';
 
@@ -508,6 +510,26 @@ export default function MainSection() {
                             ))}
                         </tbody>
                     </table>
+                </div>
+            </div>
+
+            <div className='rounded-lg bg-indigo-100 p-2 shadow-lg sm:p-3 mt-10 border border-indigo-600 '>
+                <div className='flex flex-wrap items-center justify-between'>
+                    <div className='flex w-0 flex-1 items-start'>
+                        <span className='flex rounded-lg bg-indigo-800 p-2'>
+                            <MegaphoneIcon
+                                className='h-2 w-2 text-white'
+                                aria-hidden='true'
+                            />
+                        </span>
+                        <p className='ml-3  font-sm text-sm text-black'>
+                            We recommend you update your SDK from
+                            sentry.javascript.browser@v6.19.7 to
+                            sentry.javascript.browser@v7.19.0 (All sentry
+                            packages should be updated and their versions should
+                            match)
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
