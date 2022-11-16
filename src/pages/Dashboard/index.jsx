@@ -13,7 +13,7 @@ export default function Dashboard() {
     return (
         <main className="flex-1">
             <div className="py-4 mx-auto bg-gray-100">
-                <div className="px-4 sm:px-6 lg:px-8  border-gray-200 sm:flex sm:items-center sm:justify-between">
+                <div className="px-4 sm:px-6 lg:px-8 border-gray-200 sm:flex sm:items-center sm:justify-between">
                     <h3 className="text-2xl font-semibold leading-6 text-gray-900">
                         Issues
                     </h3>
@@ -43,7 +43,7 @@ export default function Dashboard() {
                             <Dropdowns name="14D" />
                         </div>
                     </div>
-                    <div className="flex flex-1 mb-2">
+                    <div className="flex flex-1 w-full">
                         <label htmlFor="email" className="sr-only">
                             Email
                         </label>
@@ -54,20 +54,12 @@ export default function Dashboard() {
                                     aria-hidden="true"
                                 />
                             </div>
-                            {/* <div className="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 ">
-                                is:
-                            </div>
-                            <div as="div" className="relative -ml-px block">
-                                <div className="absolute inline-flex items-center rounded-r-md border border-gray-300 bg-gray-50 px-2 py-1.5 text-xs font-medium text-blue-500 ">
-                                    unresolved
-                                </div>
-                            </div> */}
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
-                                className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                                // placeholder="you@example.com"
+                                className="block w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                placeholder="you@example.com"
                             />
                             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
                                 <QuestionMarkCircleIcon
@@ -80,7 +72,9 @@ export default function Dashboard() {
                 </div>
                 <Table />
             </div>
-            <Pagination />
+            <div className="py-4">
+                <Pagination />
+            </div>
             <Footer />
         </main>
     );

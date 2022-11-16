@@ -4,6 +4,7 @@ import ButtonDropdown from "../ButtonDropdown";
 import EllipsisDropdown from "../EllipsisDropdown";
 import { Menu, Transition } from "@headlessui/react";
 import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import Dropdowns from "../Dropdowns";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -11,76 +12,184 @@ function classNames(...classes) {
 
 const people = [
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "TypeError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 102,
+        users: 20,
+        assigneeColor: "violet",
+        assignee: "A",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "UnhandledRejection",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 48,
+        users: 961,
+        assigneeColor: "indigo",
+        assignee: "B",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "Error",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 54,
+        users: 462,
+        assigneeColor: "violet",
+        assignee: "C",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "NotAllowedError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 37,
+        users: 2,
+        assigneeColor: "violet",
+        assignee: "D",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "InvalidStateError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: "5.9k",
+        users: 56,
+        assigneeColor: "indigo",
+        assignee: "E",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "Error",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 9,
+        users: "4.7k",
+        assigneeColor: "violet",
+        assignee: "F",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "NotAllowedError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 102,
+        users: 89,
+        assigneeColor: "indigo",
+        assignee: "G",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "TypeError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 82,
+        users: 998,
+        assigneeColor: "violet",
+        assignee: "H",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "UnhandledRejection",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 7,
+        users: 206,
+        assigneeColor: "indigo",
+        assignee: "I",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "TypeError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: 52,
+        users: 789,
+        assigneeColor: "violet",
+        assignee: "J",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "Error",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: "4.8k",
+        users: 34,
+        assigneeColor: "indigo",
+        assignee: "K",
     },
     {
-        name: "Lindsay Walton",
+        mainObject: {
+            heading: "NotAllowedError",
+            firstLine: "init(app/assets/javascripts/performance)",
+            secondLine:
+                "Cannot read properties of undefined (reading 'logEvent')",
+            product: "PRODUCT-1R31",
+            time: "2min ago | 2mo old",
+        },
         title: "Front-end Developer",
-        email: "lindsay.walton@example.com",
-        role: "Member",
+        events: "1.7k",
+        users: 5,
+        assigneeColor: "violet",
+        assignee: "L",
     },
     // More people...
 ];
@@ -236,7 +345,7 @@ export default function Example() {
                                         </th>
                                         <th
                                             scope="col"
-                                            className="flex justify-between px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                                            className="flex justify-between px-3 pt-5 text-left text-xs font-bold text-gray-700"
                                         >
                                             GRAPH:
                                             <span className="font-normal">
@@ -248,19 +357,19 @@ export default function Example() {
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                                            className="px-3 py-3.5 text-left text-xs font-bold text-gray-700"
                                         >
                                             EVENTS
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                                            className="px-3 py-3.5 text-left text-xs font-bold text-gray-700"
                                         >
                                             USERS
                                         </th>
                                         <th
                                             scope="col"
-                                            className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                                            className="px-3 py-3.5 text-left text-xs font-bold text-gray-700"
                                         >
                                             ASSIGNEE
                                         </th>
@@ -270,27 +379,62 @@ export default function Example() {
                                     {people.map((person) => (
                                         <tr key={person.email}>
                                             <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                                {person.name}
+                                                <input
+                                                    id="comments"
+                                                    aria-describedby="comments-description"
+                                                    name="comments"
+                                                    type="checkbox"
+                                                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                />
+                                                <span className="text-lg font-semibold ml-2 text-blue-600">
+                                                    {person.mainObject.heading}
+                                                </span>
+                                                <span className="ml-2 text-sm font-light text-slate-400">
+                                                    {
+                                                        person.mainObject
+                                                            .firstLine
+                                                    }
+                                                </span>
+                                                <div className="ml-6 text-slate-500 font-normal text-sm">
+                                                    {
+                                                        person.mainObject
+                                                            .secondLine
+                                                    }
+                                                </div>
+                                                <div className="ml-6 text-xs font-extralight">
+                                                    <span className="inline-flex items-center rounded-full border border-red-600 bg-red-100 px-3 py-0.5 text-black mr-2">
+                                                        Regression
+                                                    </span>
+                                                    <span className="mr-4">
+                                                        {
+                                                            person.mainObject
+                                                                .product
+                                                        }
+                                                    </span>
+                                                    <span>
+                                                        {person.mainObject.time}
+                                                    </span>
+                                                </div>
                                             </td>
                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                                 {person.title}
                                             </td>
-                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                {person.email}
+                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-slate-800 text-center text-base text-medium">
+                                                {person.events}
                                             </td>
-                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                {person.role}
+                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-slate-800 text-center text-base text-normal">
+                                                {person.users}
                                             </td>
-                                            <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                                <a
-                                                    href="#"
-                                                    className="text-indigo-600 hover:text-indigo-900"
-                                                >
-                                                    Edit
-                                                    <span className="sr-only">
-                                                        , {person.name}
-                                                    </span>
-                                                </a>
+                                            <td className="relative whitespace-nowrap py-4 pr-4 text-sm font-medium sm:pr-6">
+                                                <span className="mt-3 sm:mt-0 sm:ml-4">
+                                                    <button
+                                                        type="button"
+                                                        className={`inline-flex items-center rounded-md border border-transparent bg-${person.assigneeColor}-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-${person.assigneeColor}-700 focus:outline-none focus:ring-2 focus:ring-${person.assigneeColor}-500 focus:ring-offset-2`}
+                                                    >
+                                                        {person.assignee}
+                                                    </button>
+                                                </span>
+                                                {/* <Dropdowns /> */}
                                             </td>
                                         </tr>
                                     ))}
