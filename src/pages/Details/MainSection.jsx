@@ -4,7 +4,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 export default function MainSection() {
     return (
         <div className='py-4 px-4 sm:px-6 lg:px-6'>
-            <div className=' mt-2 md:flex md:items-start md:justify-between flex-start'>
+            <div className='md:flex md:items-start md:justify-between flex-start'>
                 <div className='min-w-0 flex-1'>
                     <div className='-ml-2 -mt-2 mb-2 flex flex-wrap items-baseline'>
                         <h3 className='ml-2 mt-2 text-lg font-medium leading-6 text-gray-900'>
