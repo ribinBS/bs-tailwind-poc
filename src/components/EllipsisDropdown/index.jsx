@@ -10,7 +10,7 @@ export default function Example() {
     return (
         <Menu
             as="div"
-            className="relative inline-block text-left ml-2 border-2 border-slate-200 rounded px-1 bg-slate-100"
+            className="relative inline-block text-left ml-2 border-2 border-slate-200 rounded px-1 py-0.5 bg-slate-100"
         >
             <div>
                 <Menu.Button className="flex items-center bg-gray-100 text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">

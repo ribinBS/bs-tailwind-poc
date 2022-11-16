@@ -47,7 +47,7 @@ export default function Dashboard() {
                         <label htmlFor="email" className="sr-only">
                             Email
                         </label>
-                        <div className="relative mt-1 rounded-md shadow-sm w-full">
+                        <div className="relative rounded-md shadow-sm w-full">
                             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                 <EnvelopeIcon
                                     className="h-5 w-5 text-gray-400"
