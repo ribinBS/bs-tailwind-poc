@@ -7,7 +7,7 @@ import {
     ClockIcon,
     ChevronDownIcon,
     MegaphoneIcon,
-    XMarkIcon,
+    InformationCircleIcon,
 } from '@heroicons/react/20/solid';
 import { Menu, Transition } from '@headlessui/react';
 
@@ -512,17 +512,97 @@ export default function MainSection() {
                     </table>
                 </div>
             </div>
-
-            <div className='rounded-lg bg-indigo-100 p-2 shadow-lg sm:p-3 mt-10 border border-indigo-600 '>
-                <div className='flex flex-wrap items-center justify-between'>
-                    <div className='flex w-0 flex-1 items-start'>
-                        <span className='flex rounded-lg bg-indigo-800 p-2'>
-                            <MegaphoneIcon
-                                className='h-2 w-2 text-white'
-                                aria-hidden='true'
-                            />
-                        </span>
-                        <p className='ml-3  font-sm text-sm text-black'>
+            <div className='flex mt-4 flex-col'>
+                <h3 className='mt-2 text-lg font-medium leading-6 text-gray-900'>
+                    Fragment
+                </h3>
+                <p className='bg-gray-100 p-2 rounded mt-2 text-xs'>
+                    os=iOS&os_version=15.0&device_browser=safari&zoom_to_fit=true&full_screen=true&speed=1
+                </p>
+            </div>
+            <div className='flex mt-4 flex-col'>
+                <h3 className='mt-2 text-lg font-medium leading-6 text-gray-900'>
+                    Headers
+                </h3>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>User-Agent</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+                        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0
+                        Safari/537.36
+                    </p>
+                </div>
+                <div className='font-medium text-sm flex text-gray-500 mt-8'>
+                    User
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>ID</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        4568545
+                    </p>
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>IP Address</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        None
+                    </p>
+                </div>
+                <div className='font-medium text-sm flex text-gray-500 mt-8'>
+                    Browser
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>Name</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        Chrome
+                    </p>
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>Version</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        107
+                    </p>
+                </div>
+                <div className='font-medium text-sm flex text-gray-500 mt-8'>
+                    Operating System
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>Name</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        Windows
+                    </p>
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>Version</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>10</p>
+                </div>
+                <div className='font-medium text-sm flex text-gray-500 mt-8'>
+                    SDK
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>Name</div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        Chrome
+                    </p>
+                </div>
+                <div className='flex flex-row  mt-2'>
+                    <div className='w-1/6 text-xs py-2'>
+                        sentry.javascript.browser
+                    </div>
+                    <p className='bg-gray-100 p-2 rounded text-xs w-full'>
+                        6.19.7
+                    </p>
+                </div>
+            </div>
+            <div className='rounded-md bg-blue-50 p-4 border border-indigo-600 mt-10'>
+                <div className='flex'>
+                    <div className='flex-shrink-0'>
+                        <InformationCircleIcon
+                            className='h-5 w-5 text-blue-400'
+                            aria-hidden='true'
+                        />
+                    </div>
+                    <div className='ml-3 flex-1 md:flex md:justify-between'>
+                        <p className='text-sm text-black'>
                             We recommend you update your SDK from
                             sentry.javascript.browser@v6.19.7 to
                             sentry.javascript.browser@v7.19.0 (All sentry
@@ -530,6 +610,17 @@ export default function MainSection() {
                             match)
                         </p>
                     </div>
+                </div>
+            </div>
+            <div className='flex justify-between mt-10'>
+                <div className='font-medium text-sm flex text-gray-500'>
+                    Event Grouping Information{'   '}
+                    <span className='text-gray-800 font-regular'>
+                        (grouped by exception stack-trace)
+                    </span>
+                </div>
+                <div className='font-medium text-sm flex text-gray-500 hover:text-gray-400 cursor-pointer'>
+                    Show Details
                 </div>
             </div>
         </div>
