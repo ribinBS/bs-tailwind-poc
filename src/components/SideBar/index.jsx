@@ -134,7 +134,7 @@ export default function SideBar() {
                         </nav>
                     </div>
                     <div className='flex flex-shrink-0 pb-4'>
-                        <div className='px-2'>
+                        <div className='px-2 w-full'>
                             <a
                                 key={'help'}
                                 href={'#'}
