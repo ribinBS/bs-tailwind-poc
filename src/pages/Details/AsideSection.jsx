@@ -209,11 +209,101 @@ export default function AsideSection() {
                 </div>
             </div>
             <div className='mb-6'>
-                <div className='flex mt-4 items-center justify-between'>
+                <div className='flex mt-4  justify-between flex-col'>
                     <div className='font-medium text-sm flex text-gray-500'>
                         Tag Summary
                     </div>
-                    <div className='flex'></div>
+                    <div className='flex flex-col w-full'>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser</p>
+                                <div className='text-gray-500'>
+                                    Chrome 107.0.0{' '}
+                                    <b className='text-gray-900'>98%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-5 bg-violet-800 h-full'></div>
+                                <div className='w-1 bg-violet-400 h-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser.name</p>
+                                <div className='text-gray-500'>
+                                    Chrome <b className='text-gray-900'>50%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-1/2 bg-violet-800 h-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser</p>
+                                <div className='text-gray-500'>
+                                    Chrome 107.0.0{' '}
+                                    <b className='text-gray-900'>98%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-5 bg-violet-800 h-full'></div>
+                                <div className='w-1 bg-violet-400 h-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser</p>
+                                <div className='text-gray-500'>
+                                    Chrome 107.0.0{' '}
+                                    <b className='text-gray-900'>98%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-5 bg-violet-800 h-full'></div>
+                                <div className='w-1 bg-violet-400 h-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser</p>
+                                <div className='text-gray-500'>
+                                    Chrome 107.0.0{' '}
+                                    <b className='text-gray-900'>98%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-5 bg-violet-800 h-full'></div>
+                                <div className='w-1 bg-violet-400 h-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser</p>
+                                <div className='text-gray-500'>
+                                    Chrome 107.0.0{' '}
+                                    <b className='text-gray-900'>98%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-5 bg-violet-800 h-full'></div>
+                                <div className='w-1 bg-violet-400 h-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-3 text-xs'>
+                            <div className='flex justify-between w-full font-medium'>
+                                <p className='xx'>browser</p>
+                                <div className='text-gray-500'>
+                                    Chrome 107.0.0{' '}
+                                    <b className='text-gray-900'>98%</b>
+                                </div>
+                            </div>
+                            <div className='h-3.5 mt-0.5 flex rounded bg-violet-900 overflow-hidden flex-row justify-end'>
+                                <div className='w-5 bg-violet-800 h-full'></div>
+                                <div className='w-1 bg-violet-400 h-full'></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='mt-4'>
