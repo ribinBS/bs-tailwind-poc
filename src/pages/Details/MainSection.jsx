@@ -370,18 +370,17 @@ export default function MainSection() {
                         className='hidden'
                         aria-labelledby='accordion-collapse-heading-1'>
                         <div className='p-2 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900'>
-                            <p className='text-gray-500 text-xs'>
-                                Flowbite is an open-source library of
-                                interactive components built on top of Tailwind
-                                CSS including buttons, dropdowns, modals,
-                                navbars, and more.
-                            </p>
-                            <p className='text-gray-500 text-xs font-mono'>
-                                Flowbite is an open-source library of
-                                interactive components built on top of Tailwind
-                                CSS including buttons, dropdowns, modals,
-                                navbars, and more.
-                            </p>
+                            <code className='text-gray-500 text-xs font-mono block whitespace-pre overflow-x-scroll'>
+                                {
+                                    "<span>\
+                                    ./node_modules/axios/lib/core/createError.js\
+                                </span>\
+                                <span className='text-gray-400'>in </span>\
+                                <span>createError </span>\
+                                <span className='text-gray-400'>at line</span>\
+                                <span> 16:15</span>"
+                                }
+                            </code>
                         </div>
                     </div>
                     <h2 id='accordion-collapse-heading-1'>
