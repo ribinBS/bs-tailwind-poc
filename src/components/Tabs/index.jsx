@@ -47,14 +47,7 @@ export default function Example() {
                             >
                                 {tab.name}
                                 {tab.count ? (
-                                    <span
-                                        className={classNames(
-                                            tab.current
-                                                ? "bg-indigo-100 text-indigo-600"
-                                                : "bg-gray-100 text-gray-900",
-                                            "hidden ml-3 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block"
-                                        )}
-                                    >
+                                    <span className="bg-indigo-100 text-indigo-600 hidden ml-3 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block">
                                         {tab.count}
                                     </span>
                                 ) : null}

@@ -22,7 +22,7 @@ const people = [
         title: "Front-end Developer",
         events: 102,
         users: 20,
-        assigneeColor: "pink",
+        assigneeColor: "violet",
         assignee: "A",
     },
     {
@@ -67,7 +67,7 @@ const people = [
         title: "Front-end Developer",
         events: 37,
         users: 2,
-        assigneeColor: "pink",
+        assigneeColor: "violet",
         assignee: "D",
     },
     {
