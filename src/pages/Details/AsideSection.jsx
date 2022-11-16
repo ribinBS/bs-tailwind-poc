@@ -141,6 +141,81 @@ export default function AsideSection() {
                     />
                 </div>
             </div>
+            <div className='mb-6'>
+                <div className='flex mt-4 items-center justify-between'>
+                    <div className='font-medium text-sm flex text-gray-500'>
+                        Last 24 Hours
+                    </div>
+                    <div className='flex'></div>
+                </div>
+            </div>
+            <div className='mb-6'>
+                <div className='flex mt-2 items-center justify-between'>
+                    <div className='font-medium text-sm flex text-gray-500'>
+                        Last 30 Days
+                    </div>
+                    <div className='flex'></div>
+                </div>
+            </div>
+            <div className='mb-6'>
+                <div className='flex mt-2 flex-col w-full'>
+                    <div className='font-medium text-sm flex text-gray-500 w-full'>
+                        Last Seen
+                    </div>
+                    <div className='flex'>
+                        <p className='text-sm text-gray-500'>
+                            18 minutes ago in release{' '}
+                            <a
+                                className='text-blue-600'
+                                href='#'
+                                target={'_blank'}>
+                                v35.82
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className='mb-6'>
+                <div className='flex mt-2 flex-col w-full'>
+                    <div className='font-medium text-sm flex text-gray-500 w-full'>
+                        First Seen
+                    </div>
+                    <div className='flex'>
+                        <p className='text-sm text-gray-500'>
+                            22 days ago in release{' '}
+                            <a
+                                className='text-blue-600'
+                                href='#'
+                                target={'_blank'}>
+                                v25.82
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className='mb-6'>
+                <div className='font-medium text-sm flex text-gray-500'>
+                    Issue Tracking
+                </div>
+                <div className='flex mt-2 items-center justify-between'>
+                    <div className='items-center flex'>
+                        <BoltIcon className='ml-1 h-5 w-5' />
+                        <p className='text-xs ml-2'>Jira Issue</p>
+                    </div>
+                    <ChevronDownIcon
+                        className='ml-1 h-5 w-5'
+                        aria-hidden='true'
+                    />
+                </div>
+            </div>
+            <div className='mb-6'>
+                <div className='flex mt-4 items-center justify-between'>
+                    <div className='font-medium text-sm flex text-gray-500'>
+                        Tag Summary
+                    </div>
+                    <div className='flex'></div>
+                </div>
+            </div>
             <div className='mt-4'>
                 <div className='font-medium text-sm flex text-gray-500 mb-2'>
                     Participants (4)
