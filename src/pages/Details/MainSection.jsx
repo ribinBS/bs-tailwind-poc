@@ -495,7 +495,7 @@ export default function MainSection() {
                                             {breadcrumb.category}
                                         </div>
                                     </td>
-                                    <td className='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
+                                    <td className=' px-3 py-4 text-sm text-gray-500'>
                                         {breadcrumb.description}
                                     </td>
                                     <td className='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
