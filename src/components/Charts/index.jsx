@@ -25,6 +25,7 @@ const getOptions = () => {
                     type: "value",
                 },
             ],
+            tooltip: { show: true },
             series: [
                 {
                     data: [
