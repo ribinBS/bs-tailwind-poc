@@ -173,7 +173,7 @@ export default function AsideSection() {
                     <div className='font-medium text-sm flex text-gray-500'>
                         Last 24 Hours
                     </div>
-                    <div className='font-medium text-xl'>2.2k</div>
+                    <div className='font-medium text-xl'>198</div>
                     <div className='flex -ml-6'>
                         <ReactECharts
                             style={{ height: '100px', width: '100%' }}
