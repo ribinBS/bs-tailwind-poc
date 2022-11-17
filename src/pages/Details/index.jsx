@@ -7,6 +7,7 @@ import {
     EnvelopeIcon,
     HomeIcon,
     EllipsisHorizontalIcon,
+    EyeIcon,
 } from '@heroicons/react/20/solid';
 import AsideSection from './AsideSection';
 import MainSection from './MainSection';
@@ -336,26 +337,54 @@ export default function Details() {
                                 </Menu>
                             </div>
                         </div>
-                        <div className='mt-4 flex flex-shrink-0 md:mt-0 md:ml-4'>
-                            <div key='Events' className='px-4 py-5 sm:p-6'>
-                                <dt className='text-base font-normal text-gray-900'>
-                                    EVENTS
-                                </dt>
-                                <dd className='mt-1 flex items-baseline justify-between md:block lg:flex'>
-                                    <div className='flex items-baseline text-2xl font-semibold text-indigo-600'>
-                                        6
-                                    </div>
-                                </dd>
+                        <div>
+                            <div className='mt-4 flex flex-shrink-0 md:mt-0 md:ml-4'>
+                                <div key='Events' className='pl-4 py-5 mr-6'>
+                                    <dt className='text-base font-normal text-gray-900'>
+                                        EVENTS
+                                    </dt>
+                                    <dd className='mt-1 flex items-baseline justify-between md:block lg:flex'>
+                                        <div className='flex items-baseline text-2xl font-semibold text-indigo-600'>
+                                            6
+                                        </div>
+                                    </dd>
+                                </div>
+                                <div key='users' className='pl-4 py-5 '>
+                                    <dt className='text-base font-normal text-gray-900'>
+                                        USERS
+                                    </dt>
+                                    <dd className='mt-1 flex items-baseline justify-between md:block lg:flex'>
+                                        <div className='flex items-baseline text-2xl font-semibold text-indigo-600'>
+                                            3
+                                        </div>
+                                    </dd>
+                                </div>
                             </div>
-                            <div key='users' className='px-4 py-5 sm:p-6'>
-                                <dt className='text-base font-normal text-gray-900'>
-                                    USERS
-                                </dt>
-                                <dd className='mt-1 flex items-baseline justify-between md:block lg:flex'>
-                                    <div className='flex items-baseline text-2xl font-semibold text-indigo-600'>
-                                        3
-                                    </div>
-                                </dd>
+                            <div className='isolate items-center flex -space-x-1 overflow-hidden justify-end'>
+                                <EyeIcon
+                                    className='h-5 w-5 mr-5 flex-shrink-0'
+                                    aria-hidden='true'
+                                />
+                                <img
+                                    className='relative z-30 inline-block h-6 w-6 rounded-full ring-2 ring-white'
+                                    src='https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                                    alt=''
+                                />
+                                <img
+                                    className='relative z-20 inline-block h-6 w-6 rounded-full ring-2 ring-white'
+                                    src='https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                                    alt=''
+                                />
+                                <img
+                                    className='relative z-10 inline-block h-6 w-6 rounded-full ring-2 ring-white'
+                                    src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80'
+                                    alt=''
+                                />
+                                <img
+                                    className='relative z-0 inline-block h-6 w-6 rounded-full ring-2 ring-white'
+                                    src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                                    alt=''
+                                />
                             </div>
                         </div>
                     </div>

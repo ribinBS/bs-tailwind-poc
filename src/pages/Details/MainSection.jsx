@@ -370,16 +370,15 @@ export default function MainSection() {
                         className='hidden'
                         aria-labelledby='accordion-collapse-heading-1'>
                         <div className='p-2 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900'>
-                            <code className='text-gray-500 text-xs font-mono block whitespace-pre overflow-x-scroll'>
-                                {
-                                    "<span>\
-                                    ./node_modules/axios/lib/core/createError.js\
-                                </span>\
-                                <span className='text-gray-400'>in </span>\
-                                <span>createError </span>\
-                                <span className='text-gray-400'>at line</span>\
-                                <span> 16:15</span>"
-                                }
+                            <code className='text-gray-500 text-xs font-mono block overflow-x-auto'>
+                                {`html { background: red; }`}
+                                <br />
+                                {`body { color: blue; }`}
+                                <br />
+                                {`html { background: red; }`}
+                                <br />
+                                {`body { color: blue; }`}
+                                <br />
                             </code>
                         </div>
                     </div>
