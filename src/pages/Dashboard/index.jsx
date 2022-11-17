@@ -4,12 +4,16 @@ import Dropdowns from "../../components/Dropdowns";
 import Table from "../../components/Table";
 import Pagination from "../../components/Pagination";
 import Footer from "../../components/Footer";
+import {
+    EnvelopeIcon,
+    QuestionMarkCircleIcon,
+} from "@heroicons/react/20/solid";
 
 export default function Dashboard() {
     return (
         <main className="flex-1">
             <div className="py-4 mx-auto bg-gray-100">
-                <div className="px-4 sm:px-6 lg:px-8  border-gray-200 sm:flex sm:items-center sm:justify-between">
+                <div className="px-4 sm:px-6 lg:px-8 border-gray-200 sm:flex sm:items-center sm:justify-between">
                     <h3 className="text-2xl font-semibold leading-6 text-gray-900">
                         Issues
                     </h3>
@@ -27,8 +31,8 @@ export default function Dashboard() {
                 <div className="bg-gray-100 px-8">
                     <Tabs />
                 </div>
-                <div className="grid grid-flow-col auto-cols-auto my-6 px-6">
-                    <div className="flex">
+                <div className="flex my-6 px-6">
+                    <div className="flex flex-initial">
                         <div className="mx-2">
                             <Dropdowns name="My Projects" />
                         </div>
@@ -39,22 +43,38 @@ export default function Dashboard() {
                             <Dropdowns name="14D" />
                         </div>
                     </div>
-                    <div className="flex w-full">
+                    <div className="flex flex-1 w-full">
                         <label htmlFor="email" className="sr-only">
                             Email
                         </label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                            placeholder="you@example.com"
-                        />
+                        <div className="relative rounded-md shadow-sm w-full">
+                            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                <EnvelopeIcon
+                                    className="h-5 w-5 text-gray-400"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                className="block w-full rounded-md border-gray-300 pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                placeholder="you@example.com"
+                            />
+                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                                <QuestionMarkCircleIcon
+                                    className="h-5 w-5 text-gray-400"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Table />
             </div>
-            <Pagination />
+            <div className="py-4">
+                <Pagination />
+            </div>
             <Footer />
         </main>
     );
