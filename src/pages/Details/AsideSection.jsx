@@ -1,5 +1,5 @@
-import React from 'react';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
+import ReactECharts from 'echarts-for-react';
 import { Menu, Transition } from '@headlessui/react';
 import {
     ChevronDownIcon,
@@ -12,6 +12,33 @@ import {
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
+
+const chartOptions = {
+    xAxis: {
+        show: false,
+        offset: -100,
+        type: 'category',
+        axisLine: {
+            onZero: false,
+        },
+    },
+    yAxis: {
+        type: 'value',
+        show: false,
+    },
+    tooltip: {
+        show: true,
+    },
+    series: [
+        {
+            data: [
+                120, 200, 150, 80, 70, 110, 130, 120, 200, 150, 80, 70, 110,
+                130, 120, 200, 150, 80, 70, 110, 130,
+            ],
+            type: 'bar',
+        },
+    ],
+};
 
 export default function AsideSection() {
     return (
@@ -141,20 +168,36 @@ export default function AsideSection() {
                     />
                 </div>
             </div>
-            <div className='mb-6'>
-                <div className='flex mt-4 items-center justify-between'>
+            <div className='-mb-4'>
+                <div className='flex mt-4 items-left justify-between flex-col'>
                     <div className='font-medium text-sm flex text-gray-500'>
                         Last 24 Hours
                     </div>
-                    <div className='flex'></div>
+                    <div className='font-medium text-xl'>2.2k</div>
+                    <div className='flex -ml-6'>
+                        <ReactECharts
+                            style={{ height: '100px', width: '100%' }}
+                            option={chartOptions}
+                            lazyUpdate={true}
+                            theme={'theme_name'}
+                        />
+                    </div>
                 </div>
             </div>
-            <div className='mb-6'>
-                <div className='flex mt-2 items-center justify-between'>
+            <div className='-mb-4'>
+                <div className='flex mt-4 items-left justify-between flex-col'>
                     <div className='font-medium text-sm flex text-gray-500'>
                         Last 30 Days
                     </div>
-                    <div className='flex'></div>
+                    <div className='font-medium text-xl'>2.2k</div>
+                    <div className='flex -ml-6'>
+                        <ReactECharts
+                            style={{ height: '100px', width: '100%' }}
+                            option={chartOptions}
+                            lazyUpdate={true}
+                            theme={'theme_name'}
+                        />
+                    </div>
                 </div>
             </div>
             <div className='mb-6'>
