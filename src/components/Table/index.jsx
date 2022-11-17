@@ -3,7 +3,12 @@ import { MusicalNoteIcon, TrophyIcon } from "@heroicons/react/20/solid";
 import ButtonDropdown from "../ButtonDropdown";
 import EllipsisDropdown from "../EllipsisDropdown";
 import { Menu, Transition } from "@headlessui/react";
-import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import {
+    ClockIcon,
+    ArrowDownIcon,
+    ChevronDownIcon,
+} from "@heroicons/react/20/solid";
+import Charts from "../Charts";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -19,7 +24,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 102,
         users: 20,
         assigneeColor: "violet",
@@ -34,7 +39,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 48,
         users: 961,
         assigneeColor: "indigo",
@@ -49,7 +54,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 54,
         users: 462,
         assigneeColor: "violet",
@@ -64,7 +69,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 37,
         users: 2,
         assigneeColor: "violet",
@@ -79,7 +84,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: "5.9k",
         users: 56,
         assigneeColor: "indigo",
@@ -94,7 +99,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 9,
         users: "4.7k",
         assigneeColor: "violet",
@@ -109,7 +114,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 102,
         users: 89,
         assigneeColor: "indigo",
@@ -124,7 +129,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 82,
         users: 998,
         assigneeColor: "violet",
@@ -139,7 +144,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 7,
         users: 206,
         assigneeColor: "indigo",
@@ -154,7 +159,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: 52,
         users: 789,
         assigneeColor: "violet",
@@ -169,7 +174,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: "4.8k",
         users: 34,
         assigneeColor: "indigo",
@@ -184,7 +189,7 @@ const people = [
             product: "PRODUCT-1R31",
             time: "2min ago | 2mo old",
         },
-        title: "Front-end Developer",
+        title: <Charts />,
         events: "1.7k",
         users: 5,
         assigneeColor: "violet",
@@ -394,13 +399,13 @@ export default function Example() {
                                                             .firstLine
                                                     }
                                                 </span>
-                                                <div className="ml-6 text-slate-500 font-normal text-sm">
+                                                <div className="ml-6 text-slate-700 font-normal text-sm">
                                                     {
                                                         person.mainObject
                                                             .secondLine
                                                     }
                                                 </div>
-                                                <div className="ml-6 text-xs font-extralight">
+                                                <div className="flex ml-6 text-xs font-extralight items-center">
                                                     <span className="inline-flex items-center rounded-full border border-red-600 bg-red-100 px-3 py-0.5 text-black mr-2">
                                                         Regression
                                                     </span>
@@ -410,7 +415,14 @@ export default function Example() {
                                                                 .product
                                                         }
                                                     </span>
-                                                    <span>
+                                                    <span className="inline-flex ">
+                                                        <span className="mr-1">
+                                                            <ClockIcon
+                                                                className="h-4 w-4"
+                                                                aria-hidden="true"
+                                                            />
+                                                        </span>
+
                                                         {person.mainObject.time}
                                                     </span>
                                                 </div>
