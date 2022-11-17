@@ -3,7 +3,11 @@ import { MusicalNoteIcon, TrophyIcon } from "@heroicons/react/20/solid";
 import ButtonDropdown from "../ButtonDropdown";
 import EllipsisDropdown from "../EllipsisDropdown";
 import { Menu, Transition } from "@headlessui/react";
-import { ArrowDownIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
+import {
+    ClockIcon,
+    ArrowDownIcon,
+    ChevronDownIcon,
+} from "@heroicons/react/20/solid";
 import Charts from "../Charts";
 
 function classNames(...classes) {
@@ -395,13 +399,13 @@ export default function Example() {
                                                             .firstLine
                                                     }
                                                 </span>
-                                                <div className="ml-6 text-slate-500 font-normal text-sm">
+                                                <div className="ml-6 text-slate-700 font-normal text-sm">
                                                     {
                                                         person.mainObject
                                                             .secondLine
                                                     }
                                                 </div>
-                                                <div className="ml-6 text-xs font-extralight">
+                                                <div className="flex ml-6 text-xs font-extralight items-center">
                                                     <span className="inline-flex items-center rounded-full border border-red-600 bg-red-100 px-3 py-0.5 text-black mr-2">
                                                         Regression
                                                     </span>
@@ -411,7 +415,14 @@ export default function Example() {
                                                                 .product
                                                         }
                                                     </span>
-                                                    <span>
+                                                    <span className="inline-flex ">
+                                                        <span className="mr-1">
+                                                            <ClockIcon
+                                                                className="h-4 w-4"
+                                                                aria-hidden="true"
+                                                            />
+                                                        </span>
+
                                                         {person.mainObject.time}
                                                     </span>
                                                 </div>
